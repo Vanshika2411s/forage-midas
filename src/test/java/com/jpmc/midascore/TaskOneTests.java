@@ -4,9 +4,14 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 @SpringBootTest
 class TaskOneTests {
+
+    @MockBean
+    private KafkaProducer kafkaProducer; // 👈 this is the mock to prevent bean creation errors
+
     static final Logger logger = LoggerFactory.getLogger(TaskOneTests.class);
 
     @Test
@@ -23,7 +28,5 @@ class TaskOneTests {
         }
         output.append("\n").append("---end output ---");
         logger.info(output.toString());
-
     }
-
 }
