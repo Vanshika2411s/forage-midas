@@ -1,4 +1,4 @@
-package com.jpmc.midascore.foundation;
+/*package com.jpmc.midascore.foundation;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,7 @@ import com.jpmc.midascore.repository.UserRepository;
 import com.jpmc.midascore.entity.UserRecord;
 
 
-@Component
+//@Component
 public class DataInitializer implements CommandLineRunner {
 
     @Autowired
@@ -28,3 +28,4 @@ public class DataInitializer implements CommandLineRunner {
         System.out.println("✅ Dummy users inserted into H2 database.");
     }
 }
+*/
